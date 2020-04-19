@@ -1,0 +1,186 @@
+body{
+    background-color: #111;
+}
+
+h1 {
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 50;
+	text-align: center;
+	margin: 1rem 0 3rem; 
+	font-family: 'Hind', sans-serif;
+}
+
+.title{
+	color: lime;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.inputDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 350px;
+    margin: 0.25rem;
+    transition: .5s;
+    font-size: 1.15rem;
+}
+
+.add{
+	outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: lime;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+}
+
+.add:hover{
+	opacity: 0.7;
+}
+
+.add_to_do{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.item{
+	padding: 0.5rem;
+	border-bottom: 4px solid #fff;
+	margin-bottom: 1.5rem;
+}
+.today {
+    float: left;
+}
+
+.item_input{
+	background: none;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1.4rem;
+	width: 245px;
+}
+
+.edit{
+	background: none;
+	outline: none;
+	border: none;
+	color: lime;
+	font-size: 1.4rem;
+	font-family: 'Hind', sans-serif;
+	margin: 0 0.5rem;
+	cursor: pointer;
+}
+
+.remove{
+	background: none;
+	outline: none;
+	border: none;
+	color: #E00;
+	font-size: 1.4rem;
+	font-family: 'Hind', sans-serif;
+	cursor: pointer;
+}
+#date{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.input_date{
+    height:50px;
+    background-color:none;
+    border:none;
+    border-bottom:2px solid #7fcd91;
+    text-align:center;
+    font-family:monospace;
+    font-weight:bold;
+    font-size:15px;
+    padding: 0;
+    transition: 0.3s;
+
+}
+.input_date:focus{
+    border-bottom:4px solid #2c786c;
+    outline:none;
+  }
+
+  ::-webkit-datetime-edit-fields-wrapper {
+    background: white; margin-left: 50px;
+  }
+  ::-webkit-datetime-edit-text {
+    color: red; padding: 0 0.3em;
+  }
+  ::-webkit-datetime-edit-month-field {
+    color: black; font-family:monospace;
+  }
+  ::-webkit-datetime-edit-day-field {
+    color: black; font-family:monospace;
+  }
+  ::-webkit-datetime-edit-year-field {
+    color: black; font-family:monospace;
+  }
+  ::-webkit-inner-spin-button {
+    display: none;
+  }
+  ::-webkit-calendar-picker-indicator {
+      opacity: 1;
+      display: block;
+      float: left;
+      margin-right: 50px;
+      color:#fa163f;
+      width: 15.5px;
+      height: 12.5px;
+  }
+  @media only screen and (max-width:600px) {
+    .inputDiv {
+      width:75%;
+      position: absolute;
+      top:15%;
+    }
+    .input{
+      width: 75%;
+      position: absolute;
+      right:10%;
+    }
+    .add_to_do {
+      width:75%;
+      position: absolute;
+      top:25%;
+    }
+    .edit{
+      width:35%;
+      position: absolute;
+      left:55%;
+    }
+    .remove {
+      width:35%;
+      position: absolute;
+      left:85%
+    }
+    .add {
+     padding:20px;
+     position: relative;
+     left:15%;
+    }
+  }
